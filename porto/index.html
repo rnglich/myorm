@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio Saya — Interaktif</title>
+  <meta name="description" content="Portofolio Full Stack Developer interaktif — hero, timeline, hobi, projek, galeri, kontak." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Progress bar top -->
+  <div id="progressWrap" aria-hidden="true">
+    <div id="progressBar"></div>
+  </div>
+
+  <!-- Canvas background for particles -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <div class="brand" tabindex="0">
+        <img src="img/pasfoto.jpeg" alt="Foto profil kecil" id="profileSmall" />
+        <div class="brand-text">
+          <strong>Rangga</strong>
+          <div class="small">Programmer Pemula</div>
+        </div>
+      </div>
+
+      <nav id="mainNav" class="nav" role="navigation" aria-label="Main Navigation">
+        <a href="#about">Tentang</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Projek</a>
+        <a href="#hobbies">Hobi</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="burger" class="burger" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero" role="region" aria-label="Hero">
+    <div class="hero-inner">
+      <img src="img/pasfoto2.jpeg" alt="Foto Diri" id="profile-pic" class="hero-pic" loading="lazy" />
+      <h1 class="hero-title">Hallo, Saya <span id="heroName">Rangga Wardhana Al Hafitz</span></h1>
+      <p class="hero-sub"><span id="typing"></span></p>
+      <div class="hero-links">
+        <a href="#contact">Email</a>
+        <a href="#projects">Projek</a>
+        <a href="#experience">Galeri</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Tentang -->
+    <section id="about" class="section" tabindex="-1">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Halo, saya <strong>Rangga Wardhana Al Hafitz</strong>. 
+              Saya seorang programmer pemula yang sangat menyukai perkembangan teknologi dan kemajuan dari 
+              teknologi. Saya adalah seorang mahasiswa prodi Ilmu Komputer di Universitas Negeri Medan. 
+              Saya sangat menyukai perkembangan teknologi mulai dari bagian-bagian komputer, AI, Software, 
+              Hardware dll.
+            </p>
+            <ul class="quick-info">
+              <li><strong>Progam Studi:</strong> Ilmu Komputer</li>
+              <li><strong>Minat:</strong> Web, AI, Game Dev</li>
+            </ul>
+            <div class="skills-inline">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education / Timeline -->
+    <section id="education" class="section" tabindex="-1">
+      <h2>Riwayat Pendidikan</h2>
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>SD — SDN 106196 (2013-2019)</h3>
+            <p class="mini">Sejak kecil SD saya sudah sangat menyukai perkebmbangan teknologi mulai dari smartphone, televisi, gadget, pc dll. Saya mulai tertarik dengan teknologi dikarenakan saya takjub saat melihat sebuah komputer di warnet bisa bekerja.</p>
+          </div>
+        </div>
+
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>SMP — YPAK PTPN III SEI KARANG (2019-2022)</h3>
+            <p class="mini">Saat menginjak Sekolah Menengah Pertama saya mulai semakin suka dengan perkebmbangan dari teknologi terkhususnya smartphone, dimana saya sangat tertarik dengan model, spesifikasi dan berbagai macam bagian dari smartphone, tidak hanya itu saya juga mulai tertarik dengan bagian-bagian dari komputer</p>
+          </div>
+          
+        </div>
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>SMA — SMAN 1 GALANG (2022-2025)</h3>
+            <p class="mini">Saat menginjak Sekolah Menengah Atas saya yang awalnya 
+              ingin masuk ke SMK karena saya sangat menyukai tentang komputer baik 
+              dari hardwarenya seperti processor, ram, vga, rom, dll. 
+              Namun semua itu hanya sebatas mimpi karena saya lebih direkomendasikan untuk masuk SMA, 
+              namun semua itu tidak membuat minat saya terhadap komputer menjadi berkurang. 
+              Saat saya berada di SMA saya sudah bisa mengganti part dari hp saya teepatnya pada bagian lcd hp saya yang rusak
+              saya sangat suka dengan proses penggantian part tersebut.
+              Setelah tamat SMA saya ingin semakin memperdalam minat saya pada komputer saat saya beeada 
+              di dunia perkuliahan nanti</p>
+          </div>
+        </div>
+
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>Kuliah — Universitas Negeri Medan (2025-Sekarang)</h3>
+            <p class="mini">Saya sekarang sudah berada di posisi ini, disini saya akan lebih memperdalam minat saya terhadap komputer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills (with animated circle chart) -->
+    <section id="skills" class="section" tabindex="-1">
+      <h2>My Skill Gwa</h2>
+      <div class="skills-wrap">
+        <div class="skills-left">
+          <div class="skill-row">
+            <label>HTML</label>
+            <div class="progress-bar"><div class="progress" data-skill="20"></div></div>
+          </div>
+          <div class="skill-row">
+            <label>CSS</label>
+            <div class="progress-bar"><div class="progress" data-skill="15"></div></div>
+          </div>
+          <div class="skill-row">
+            <label>JavaScript</label>
+            <div class="progress-bar"><div class="progress" data-skill="20"></div></div>
+            <div class="skill-row">
+            <label>Python</label>
+            <div class="progress-bar"><div class="progress" data-skill="10"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects with filter -->
+    <section id="projects" class="section" tabindex="-1">
+      <h2>Projek</h2>
+      <div class="projects-controls">
+        <div class="filters">
+          <button data-filter="all" class="filter active">Semua</button>
+          <button data-filter="web" class="filter">Web</button>
+          <button data-filter="game" class="filter">Mini Game</button>
+          <button data-filter="ai" class="filter">Aplikasi AI</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-type="web" data-title="Website Portfolio">
+          <div class="icon">
+            <img src="icons/icon.jpg" alt="icon" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <h3>Website Portfolio</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laborum facere exercitationem. Fugiat reprehenderit nobis in animi corrupti id minus, temporibus quaerat molestias, ex, pariatur ratione velit debitis alias minima?.</p>
+            <div class="proj-actions">
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-type="game" data-title="Website Portfolio">
+       <div class="icon">
+          <img src="icons/icon2.jpg" alt="icon" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <h3>Game Mini</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis non consequatur, voluptatum neque consectetur expedita deleniti reprehenderit laboriosam repellendus, iusto sequi facilis explicabo dolore nostrum necessitatibus et architecto doloremque fugiat.</p>
+          </div>
+          </article>
+
+         <article class="project-card" data-type="ai" data-title="Website Portfolio">
+          <div class="icon">
+          <img src="icons/icon3.jpg" alt="Aplikasi AI" loading="lazy" />
+          </div>
+          <div class="proj-body">
+            <h3>Aplikasi AI</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus quaerat expedita, nam incidunt eos pariatur rerum, obcaecati provident, enim inventore eligendi minus distinctio quidem vel laudantium beatae praesentium quis..</p>
+          </div>
+        </article>
+          </div>
+      </div>
+    </section>
+
+    <!-- Hobbies with media -->
+    <section id="hobbies" class="section" tabindex="-1">
+      <h2>Hobi</h2>
+      <div class="hobby-grid">
+        <div class="hobby-item" data-hobby="musik" tabindex="10">
+          <img src="img/spoti.jpg" alt="Mendengarkan Lagu" loading="lazy" />
+          <div class="hobby-caption">
+            <h4>Mendengarkan Lagu</h4>
+          </div>
+        </div>
+
+        <div class="hobby-item" data-hobby="film" tabindex="3">
+          <img src="img/net.jpg" alt="Menonton Film" loading="lazy" />
+          <div class="hobby-caption">
+            <h4>Menonton Film</h4>
+          </div>
+        </div>
+
+        <div class="hobby-item" data-hobby="game" tabindex="0">
+          <img src="img/emsi.jpeg" alt="Bermain Game" loading="lazy" />
+          <div class="hobby-caption">
+            <h4>Bermain Video Game</h4>
+          </div>
+        </div>
+
+        <div class="hobby-item" data-hobby="foto" tabindex="0">
+          <img src="img/foto2.jpeg" alt="Fotografi" loading="lazy" />
+          <div class="hobby-caption">
+            <h4>Fotografi Langit</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Gallery with carousel -->
+    <section id="experience" class="section" tabindex="-1">
+      <h2>Dokumentasi</h2>
+
+      <div class="gallery-wrap">
+        <div class="gallery">
+          <div class="gallery-item"><img src="img/foto2.jpeg" alt="" loading="lazy" ></div>
+          <div class="gallery-item"><img src="img/foto7.jpeg" alt="" loading="lazy" ></div>
+          <div class="gallery-item"><img src="img/foto4.jpeg" alt="" loading="lazy" ></div>
+          <div class="gallery-item"><img src="img/foto1.jpeg" alt="" loading="lazy" ></div>
+        </div>
+        <div class="gallery-controls">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section" tabindex="-1">
+      <h2>Hubungi Saya</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+          <input type="text" id="name" name="name" placeholder="Nama" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
+          <input type="text" id="subject" name="subject" placeholder="Subjek" />
+          <textarea id="message" name="message" placeholder="Pesan" rows="5" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Kirim</button>
+            <button type="button" id="resetForm" class="btn alt">Reset</button>
+          </div>
+          <div id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Info Kontak</h3>
+          <p>Email: <a href="mailto:ranggawardhana0901@gmail.com">ranggawardhana0901@gmail.com</a></p>
+          <p>WhatsApp: <a href="https://wa.me/6285368729081">WhatsApp</a></p>
+          <div class="social">
+         <a href="https://www.instagram.com/rnga.w?igsh=ZzdoczB6ODk2N3Jq" ><i class="fa fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/17mepuaALC/" ><i class="fa fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/rnglich"><i class="fa fa-brands fa-github"></i></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Rangga Wardhana Al Hafitz
+    </div>
+  </footer>
+
+  <!-- MODALS (reusable) -->
+  <div id="photoModal" class="modal" aria-hidden="true">
+    <div class="modal-body">
+      <button class="modal-close" data-close>&times;</button>
+      <img src="img/pasfoto2.jpeg" alt="Profil Besar" />
+      <h3>Rangga Wardhana Al Hafitz</h3>
+      <p>Mahasiswa Ilmu Komputer</p>
+      <div class="social-links">
+        <a href="https://github.com/rnglich"><i class="fa fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/rnga.w?igsh=ZzdoczB6ODk2N3Jq" ><i class="fa fa-brands fa-instagram"></i></a>
+       <a href="https://www.facebook.com/share/17mepuaALC/" ><i class="fa fa-brands fa-facebook"></i></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-body">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="projTitle">Judul Projek</h3>
+      <img id="projImg" src="" alt="" />
+      <p id="projDesc"></p>
+      <div id="projLinks"></div>
+    </div>
+  </div>
+
+  <div id="hobbyModal" class="modal" aria-hidden="true">
+    <div class="modal-body">
+      <button class="modal-close" data-close>&times;</button>
+      <div id="hobbyContent"></div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="modal" aria-hidden="true">
+    <div class="modal-body lightbox-body">
+      <button class="modal-close" data-close>&times;</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Popup small used by gallery (also styled in CSS) -->
+  <div id="galleryPopup" class="popup" aria-hidden="true">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <img src="." alt="preview" />
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
